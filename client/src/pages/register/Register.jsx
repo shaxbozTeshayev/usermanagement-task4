@@ -10,7 +10,7 @@ const Register = () => {
         <div className="registerForm">
           <div className="registerFormTop">
             <div className="title">
-              <h5>Admin Panel</h5>
+              <h5>Register</h5>
             </div>
           </div>
           <div className="registerFormCenter">
@@ -19,7 +19,7 @@ const Register = () => {
           </div>
           <div className="registerFormBottom">
             <span>
-              Already have an account?{" "}
+              Already have an account?
               <Link to="/login">
                 <strong>Sign In</strong>
               </Link>

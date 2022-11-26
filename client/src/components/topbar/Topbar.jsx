@@ -20,12 +20,12 @@ const Topbar = () => {
       <div className="container">
         <div className="topbar_wrapper">
           <div className="d-flex align-items-center">
-            <h5>UserManagementTask</h5>
-            <h6>Home</h6>
-            <h6>Privacy</h6>
+            <h5>User Management</h5>
           </div>
           <div className="d-flex align-items-center">
-            <span className="mr-4 text-info">Hello {currentUser?.email}</span>
+            <span className="mr-4 text-info text-light">
+              Hello {currentUser?.email}
+            </span>
             <span onClick={exit}>
               Logout <FaSignOutAlt />
             </span>

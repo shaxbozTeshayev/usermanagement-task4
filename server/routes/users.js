@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const Auths = require("../middleware/auths");
 const { User } = require("../models/user");
-
+const mongoose = require("mongoose");
 router.get("/get_all_users", Auths, async (req, res) => {
   try {
     const users = await User.find();

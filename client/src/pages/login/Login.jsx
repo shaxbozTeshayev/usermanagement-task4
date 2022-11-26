@@ -10,7 +10,7 @@ const Login = () => {
           {/* login */}
           <div className="registerFormTop">
             <div className="title">
-              <h5>Admin Panel Login</h5>
+              <h5>Login</h5>
             </div>
           </div>
           <div className="registerFormCenter">
@@ -19,7 +19,7 @@ const Login = () => {
           </div>
           <div className="registerFormBottom">
             <span>
-              Already have an account?{" "}
+              Haven't registered yet ?
               <Link to="/register">
                 <strong>Sign Up</strong>
               </Link>
