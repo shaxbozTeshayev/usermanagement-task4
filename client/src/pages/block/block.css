@@ -1,0 +1,23 @@
+.block_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: crimson;
+}
+
+.block_wrapper button {
+  border: none;
+  padding: 5px 20px;
+  display: block;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 3px;
+  transition: all ease-in 0.15s;
+  margin-top: 10px;
+}
+
+.block_wrapper button:hover {
+  background-color: #2272f2;
+  color: #fff;
+}

@@ -1,0 +1,14 @@
+.alert {
+  padding: 5px;
+  /* background-color: #f44336da; */
+  color: white !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 9 !important;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+}

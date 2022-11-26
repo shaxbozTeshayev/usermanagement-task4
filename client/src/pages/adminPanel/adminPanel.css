@@ -1,0 +1,195 @@
+.adminPanel_container {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.table_container {
+  padding: 40px;
+}
+
+.thead-dark {
+  background-color: slategray;
+  color: #fff;
+}
+
+.checkboxInput {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  color: crimson;
+}
+
+.blockOpenIcon {
+  color: green;
+}
+
+.blockIcon {
+  color: crimson;
+}
+
+.icons svg {
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+/* delete modal */
+.delete_user_modal_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 3 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: groups_settings_container 0.15s;
+}
+
+.delete_user_modal_wrapper {
+  width: 350px;
+  border-radius: 5px;
+  padding: 20px 10px;
+  padding-bottom: 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.delete_user_modal_wrapper h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.delete_user_modal_wrapper span {
+  font-size: 14px;
+}
+
+.delete_user_modal_wrapper button {
+  border: none;
+  border-radius: 5px;
+  padding: 7px 10px;
+  width: 70px;
+  cursor: pointer;
+  transition: all ease-in 0.15s;
+  font-size: 14px;
+}
+
+.delete_user_btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.delete_user_modal_wrapper button:nth-child(2) {
+  color: crimson !important;
+}
+
+.delete_user_modal_wrapper button:nth-child(1):hover {
+  background-color: rgba(0, 0, 255, 0.089);
+}
+
+.delete_user_modal_wrapper button:nth-child(2):hover {
+  background-color: rgba(228, 59, 93, 0.111);
+}
+
+/* error alert */
+.error_alert {
+  max-width: 1600px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(220, 20, 60, 0.223);
+  color: crimson;
+  font-size: 13px;
+  border-radius: 2px;
+  padding: 3px;
+  animation: error_alert 0.2s;
+  font-family: "Times New Roman", Times, serif;
+  margin: auto;
+}
+
+/* loader */
+.loader {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #3498db;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+  margin-bottom: -4px;
+}
+
+/* search */
+.filter_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.filter_btns_inline {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter_btns button {
+  margin-left: 5px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes groups_settings_container {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes error_alert {
+  0% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
