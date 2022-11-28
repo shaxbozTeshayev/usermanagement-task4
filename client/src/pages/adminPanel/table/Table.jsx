@@ -126,11 +126,14 @@ const Table = () => {
   // block users
   const blockusers = async (isBool) => {
     let usersId = [];
-    inputs_ref.current.forEach((input, index) => {
-      if (input?.checked) {
-        usersId.push(users[index]._id);
-      }
-    });
+    if (inputs_ref.current?.length > 0) {
+      inputs_ref.current.forEach((input, index) => {
+        if (input?.checked) {
+          usersId.push(users[index]._id);
+        }
+      });
+    }
+
     setLoader(true);
 
     if (usersId?.length > 0) {
