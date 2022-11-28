@@ -127,7 +127,7 @@ const Table = () => {
   const blockusers = async (isBool) => {
     let usersId = [];
     inputs_ref.current.forEach((input, index) => {
-      if (input.checked) {
+      if (input?.checked) {
         usersId.push(users[index]._id);
       }
     });
