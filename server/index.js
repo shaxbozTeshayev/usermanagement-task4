@@ -58,6 +58,8 @@ app.use(morgan("common"));
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
 
+app.use(express.static(path.join(__dirname + "/public")));
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log("Port " + port + " is working");
