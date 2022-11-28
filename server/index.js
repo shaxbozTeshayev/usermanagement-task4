@@ -46,7 +46,7 @@ mongoose
 //   return res;
 // };
 
-app.use(corsMiddleware);
+// app.use(corsMiddleware);
 app.use(express.json());
 app.use(cors());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
